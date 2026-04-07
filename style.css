@@ -1,0 +1,144 @@
+:root{
+  --bg-main:#0d0d0d;
+  --bg-secondary:#1a1a1a;
+  --text-main:#ffffff;
+  --blue:#00eaff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.section{
+  padding:80px 0;
+  background: var(--bg-main);
+}
+
+.section:nth-child(even){
+  background: var(--bg-secondary);
+}
+
+.text-muted{
+  color:#bbbbbb !important;
+}
+
+.navbar{
+  background: rgba(0,0,0,0.9);
+}
+
+.nav-link:hover{
+  color: var(--blue) !important;
+  text-shadow: 0 0 5px var(--blue);
+}
+
+.nav-link.active{
+  color: var(--blue) !important;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* PROFILE IMAGE */
+.profile-img-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.profile-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border:3px solid var(--blue);
+  transition:0.4s;
+  box-shadow:0 0 15px var(--blue);
+}
+
+.profile-img:hover{
+  transform:scale(1.1) rotate(5deg);
+  box-shadow:0 0 30px var(--blue);
+}
+
+/* BUTTON */
+.btn-primary{
+  border:1px solid var(--blue);
+  color:var(--blue);
+  background:transparent;
+}
+
+.btn-primary:hover{
+  background:var(--blue);
+  color:#000;
+  box-shadow:0 0 15px var(--blue);
+}
+
+/* CARDS */
+.card{
+  background:#111;
+  transition:0.4s;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 0 25px rgba(0,234,255,0.4);
+}
+
+.card img{
+  transition:0.4s;
+}
+
+.card:hover img{
+  transform:scale(1.05);
+}
+
+/* SKILLS */
+.skill-box{
+  background:#111;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+  border:1px solid #222;
+}
+
+.skill-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 15px var(--blue);
+}
+
+h4{
+  color: var(--blue);
+}
+
+/* FORM */
+input,textarea{
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+}
+
+input:focus,textarea:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 10px var(--blue);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .hero h1{
+    font-size:28px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+}
